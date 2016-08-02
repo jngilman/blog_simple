@@ -17,6 +17,9 @@ class PostsController < ApplicationController
   	@post = Post.new # this communicates with db through routes, posts#new
   end
 
+  def show
+  	@post = Post.find(params[:id])
+  end
 
   private
   def post_params
