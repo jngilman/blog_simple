@@ -1,1 +1,6 @@
-
+<% @posts.each do |p| %>
+<p><%= p.title %></p>
+<p><%= p.body %></p>
+<br>
+<%= link_to "Read More", p %>
+<% end %>
